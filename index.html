@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon/favicon-16x16.png">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <script src="./assets/js/script.js" defer></script>
+    <title>UpGrade</title>
+</head>
+<body>
+    <header>
+        <a class="logo" href="./index.html">UpGrade</a>    
+        <nav>
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#nutrition-section">Nutrição</a></li>
+                <li><a href="#exercises-section">Planos de Treino</a></li>
+                <li><a href="#supplements-section">Suplementos</a></li>
+                <li><a href="#bulking-section">Bulking</a></li>
+                <li><a href="#cutting-section">Cutting</a></li>
+                <li><a href="#dicas-section">Dicas</a></li>
+                <a class="stats" href="./estatisticas.html">Estatísticas</a>
+                <a class="dicas" href="./dicas.html">Dicas</a>
+            </ul>
+        </nav>
+    </header>
+<main>
+    <section id="home" class="home-style">
+        <div class="overlays">
+            <h1>Muda a tua vida hoje</h1>
+            <button class="menu-button" onclick="openPopup()">Get Started</button>
+            <a href="https://forms.office.com/Pages/ShareFormPage.aspx?id=Ws2yTj9GN0aInHV8bOxF6fmGcEPcdilKo1r0o8slKphUQ1pLSEFNUE5LVlRFMUw0VFVURVpDR0lMOC4u&sharetoken=PAUEGFEaES7b92tWPZUS" target="_blank"><button class="menu-button">Questionário Fitness (Forms)</button></a>
+        </div>
+        <div id="overlay"></div>
+            <div id="popup" class="color_black">
+                <div class="color_main">
+                    <form id="myForm" method="post" onsubmit="return validateForm()">
+                        <label for="name">Nome:</label>
+                        <input type="text" id="name" name="name" pattern="[A-Za-zÀ-ÖØ-öø-ÿ\s]+" required>
+                        <label for="dtnasc">Data de Nascimento:</label>
+                        <input type="date" id="datadenascimento" name="dtnasc" max="3000-12-31" min="1000-01-01" data-toggle="tooltip" required>
+                        <label for="peso">Peso:</label>
+                        <input type="number" id="peso" name="peso" placeholder="Kg" max="200" min="20" required>
+                        <label for="altura">Altura:</label>
+                        <input type="number" id="altura" name="altura" placeholder="M" max="3" step="0.01" required>
+                        <label for="message">Observações:</label>
+                        <textarea id="sobre" name="message" rows="4" required></textarea>
+                        <label for="mail">Mail:</label>
+                        <input type="email" id="email" name="email" pattern=".+@.+" placeholder="seuemail@example.com" required>
+                        <button class="button_menu" type="submit">Enviar</button>
+                    </form>
+                </div>
+            </div>
+    </section>
+    <section id="nutrition-section" class="nutrition-style">
+            <h2>Nutrição</h2>
+            <p>Mudar os hábitos alimentares pode parecer desafiador, mas com algumas dicas práticas, é possível adotar uma dieta mais saudável de forma gradual e sustentável.</p>
+            <h4>Planeie suas refeições</h4>
+            <p><i class="bi bi-arrow-right"></i>Comece a semana planeando suas refeições. Isso ajuda a evitar escolhas alimentares impulsivas e garante uma dieta equilibrada.</p>
+            <h4>Inclua mais frutas e vegetais</h4>
+            <p><i class="bi bi-arrow-right"></i>Tente incluir frutas e vegetais em todas as refeições. Eles são ricos em vitaminas, minerais e fibras, essenciais para a saúde.</p>
+            <h4>Hidrate-se bem</h4>
+            <p><i class="bi bi-arrow-right"></i>Beber água ao longo do dia é crucial para a digestão e o funcionamento geral do corpo. Mantenha uma garrafa de água sempre por perto.</p>
+            <h4>Reduza o consumo de açucares e alimentos processados</h4>
+            <p><i class="bi bi-arrow-right"></i>Evite alimentos com altos teores de açúcar e processados. Opte por opções mais naturais e integrais.</p>
+            <h4>Faça lanches saudáveis</h4>
+            <p><i class="bi bi-arrow-right"></i>Escolha lanches saudáveis, como frutas, nozes ou iogurte natural, para manter a energia e evitar picos de fome.</p>
+    </section>
+    <section id="exercises-section" class="exercises-style">
+            <h2>Planos de Treino</h2>
+            <p>Estes são os exercícios necessários para obter o seu físico de sonho e ter uma saúde boa.</p>
+            <ul>
+                <li><strong>Bíceps/Tríceps</strong></li>
+                    <a href="https://www.youtube.com/watch?v=ja45paikjpU" class="exercicios" target="_blank"><p><i class="bi bi-arrow-right"></i>Rosca alterada com halteres</p></a>
+                    <a href="https://www.youtube.com/watch?v=0qkQy8V2FC0" class="exercicios" target="_blank"><p><i class="bi bi-arrow-right"></i>Rosca martelo</p></a>
+                    <a href="https://www.youtube.com/watch?v=fDMYTTo7W_o" class="exercicios" target="_blank"><p><i class="bi bi-arrow-right"></i>Curvatura de concentração com halteres no joelho</p></a>
+                    <a href="https://www.youtube.com/watch?v=gbnLZto6b0s" class="exercicios" target="_blank"><p><i class="bi bi-arrow-right" ></i>Tríceps corda</p></a>
+                    <a href="https://www.youtube.com/watch?v=LdfpvZPnUSI" class="exercicios" target="_blank"><p><i class="bi bi-arrow-right"></i>Mergulho de tríceps</p></a>
+                    <a href="https://www.youtube.com/watch?v=PAauHMIhWKg" class="exercicios" target="_blank"><p><i class="bi bi-arrow-right"></i>Flexão diamante</p></a>
+                    <img src="/Users/ricardoromano/Documents/Photos UpGrade/biceps-img.jpeg" alt="biceps" class="exercicios-img">
+                <li><strong>Peito</strong></li>
+                    <a href="https://www.youtube.com/watch?v=Kr2erpSyu3M" class="exercicios" target="_blank"><p><i class="bi bi-arrow-right"></i>Supino reto com barra</p></a>
+                    <a href="https://www.youtube.com/watch?v=F4Q1g2z8MWM" class="exercicios" target="_blank"><p><i class="bi bi-arrow-right"></i>Supino inclinado com halteres</p></a>
+                    <a href="https://www.youtube.com/watch?v=J1YnmuweOkM" class="exercicios" target="_blank"><p><i class="bi bi-arrow-right"></i>Aberturas</p></a>
+                    <img src="/Users/ricardoromano/Documents/Photos UpGrade/peito-img.webp" alt="peito" class="exercicios-img">
+                <li><strong>Costas</strong></li>
+                    <a href="https://www.youtube.com/watch?v=9FFLBDWXSZA" class="exercicios" target="_blank"><p><i class="bi bi-arrow-right"></i>Puxada aberta</p></a>
+                    <a href="https://www.youtube.com/watch?v=qXHlY6Yp7h4" class="exercicios" target="_blank"><p><i class="bi bi-arrow-right"></i>Voador dorsal</p></a>
+                    <a href="https://www.youtube.com/watch?v=TfxJMertfsw" class="exercicios" target="_blank"><p><i class="bi bi-arrow-right"></i>Remada curva com barra</p></a>
+                    <img src="/Users/ricardoromano/Documents/Photos UpGrade/costas-img.jpeg" alt="costas" class="exercicios-img">
+                <li><strong>Ombros</strong></li>
+                    <a href="https://www.youtube.com/watch?v=L-iQfHVeuVg" class="exercicios" target="_blank"><p><i class="bi bi-arrow-right"></i>Desenvolvimento com halteres</p></a>
+                    <a href="https://www.youtube.com/watch?v=ORparUDksUk" class="exercicios" target="_blank"><p><i class="bi bi-arrow-right"></i>Elevação lateral</p></a>
+                    <a href="https://www.youtube.com/watch?v=YghvTx_GI2c" class="exercicios" target="_blank"><p><i class="bi bi-arrow-right"></i>Arnold press na máquina</p></a>
+                    <img src="/Users/ricardoromano/Documents/Photos UpGrade/ombros-img.webp" alt="ombros" class="exercicios-img">
+                <li><strong>Pernas</strong></li>
+                    <a href="https://www.youtube.com/watch?v=pzNyhPoSOxU" class="exercicios" target="_blank"><p><i class="bi bi-arrow-right"></i>Prensa</p></a>
+                    <a href="https://www.youtube.com/watch?v=y6juG3XuRe4&t=20s" class="exercicios" target="_blank"><p><i class="bi bi-arrow-right"></i>Extensora</p></a>
+                    <a href="https://www.youtube.com/watch?v=4L5nBs8Eq7g" class="exercicios" target="_blank"><p><i class="bi bi-arrow-right"></i>Agachamento</p></a>
+                    <img src="/Users/ricardoromano/Documents/Photos UpGrade/pernas-img.jpeg" alt="pernas" class="exercicios-img">
+                <li><strong>Abdominais</strong></li>
+                    <a href="https://www.youtube.com/watch?v=yFKPFCnpFJs" class="exercicios" target="_blank"><p><i class="bi bi-arrow-right"></i>Abdominal canivete</p></a>
+                    <a href="https://www.youtube.com/watch?v=qNRqGqESAWU" class="exercicios" target="_blank"><p><i class="bi bi-arrow-right"></i>Prancha</p></a>
+                    <a href="https://www.youtube.com/watch?v=Gi5QxKITke4" class="exercicios" target="_blank"><p><i class="bi bi-arrow-right"></i>Abdominal alpinista</p></a>
+                    <img src="./assets/img/abdominais-img.webp" alt="abdominais" class="exercicios-img">
+            </ul>
+        </section>
+        <section id="supplements-section" class="suplementos-style">
+            <h2>Suplementos</h2>
+            <p>Conteúdo sobre <strong>Suplementos</strong>...</p>
+            <ul>
+                <li><strong>Creatina</strong></li>
+                    <p><i class="bi bi-arrow-right"></i>É uma substância que fornece energia para os músculos melhorando o desempenho físico, aumentando a massa muscular e prevenindo doenças crônicas;</p>
+                    <p><i class="bi bi-arrow-right"></i>É produzida pelos rins, pâncreas e fígado, mas também está presente em alimentos como peixe, carne, frango, leite e derivados. Além disso, a creatina tanbém pode ser encontrada, em maiores concentrações, na forma de suplementos em cápsulas ou pó, que podem ser ingeridos antes ou depois dos treinos.</p>
+                    <a href="https://www.zumub.com/PT/creatina-monohidrato/creatine-powder-300g?currency=EUR&gcpid=171&feedpid=732&srsltid=AfmBOor0QNJGpApzqemEYNf1ouV_sLa-tXwS_LJVg39YMCc3RkX2VpNMFVE" target="_blank">
+                        <img src="/Users/ricardoromano/Documents/Photos UpGrade/creatina-img.png" alt="Creatina" class="suplementos-img">
+                    </a>                
+                    <li><strong>Whey Protein</strong></li>
+                    <p><i class="bi bi-arrow-right"></i>A Whey Protein (proteína de soro de leite) é um dos suplementos mais conhecidos e usados por praticantes de atividades físicas.</p>
+                    <p><i class="bi bi-arrow-right"></i>Oferece todos os aminoácidos essenciais para a recuperação e construção muscular, ou seja, por favorecer o ganho de força e hipertrofia (aumento da massa magra).</p>
+                    <a href="https://www.zumub.com/PT/proteinas/whey/100-whey-gold-standard?currency=EUR&gcpid=171&feedpid=930&feedpovid=800&utm_source=google&utm_campaign=17715696697&utm_medium=cpc&utm_content=utm_term&gad_source=1&gclid=EAIaIQobChMItZ29trr7hgMV6IFQBh0o7wZlEAQYByABEgJIffD_BwE" target="_blank">
+                        <img src="/Users/ricardoromano/Documents/assets/img/wheyprotein-img.jpeg" alt="Whey Protein" class="suplementos-img">
+                    </a>
+                    <li><strong>Multivitamínicos</strong></li>
+                    <p><i class="bi bi-arrow-right"></i>Ajuda a promover o bom funcionamento geral do corpo;</p>
+                    <p><i class="bi bi-arrow-right"></i>Ajuda a equilibrar o sistema imunitário, nervoso e hormonal;</p>
+                    <p><i class="bi bi-arrow-right"></i>Contém minerais que contribuem para o bom funcionamento dos músculos, ossos e centenas de processos do corpo;</p>
+                    <p><i class="bi bi-arrow-right"></i>É uma boa opção porque contém diferentes vitamina e minerais, mas podes também adquiri-las individualmente, através de suplementos de vitaminas individuais.</p>
+                    <a href="https://www.primor.eu/pt_pt/onevit-multivitaminicos-e-multiminerais-para-mulheres-84728.html" target="_blank">
+                        <img src="/Users/ricardoromano/Documents/assets/img/multivitaminicos-img.jpeg" alt="Multivitamínicos" class="suplementos-img">
+                    </a>
+                <li><strong>Vitamina D</strong></li>
+                    <p><i class="bi bi-arrow-right"></i>Estudos revelam que uma grande percentagem da população europeia tem carência de Vitamina D;</p>
+                    <p><i class="bi bi-arrow-right"></i>Esta vitamina é produzida pelo nosso corpo quando estamos expostos ao sol e também a podes encontrar nalguns alimentos;</p>
+                    <p><i class="bi bi-arrow-right"></i>Promove a saúde oral e óssea;</p>
+                    <p><i class="bi bi-arrow-right"></i>Fortalece e regula o sistema imunitário hormonal;</p>
+                    <p><i class="bi bi-arrow-right"></i>Ajuda a garantir bons níveis de colesterol no sangue.</p>
+                    <a href="https://www.boa-saude.pt/Vitamina-D" target="_blank">
+                        <img src="/Users/ricardoromano/Documents/assets/img/vitaminad-img.jpeg" alt="Vitamina D" class="suplementos-img">
+                    </a>
+                <li><strong>Magnésio</strong></li>
+                    <p><i class="bi bi-arrow-right"></i>Tal como as vitaminas, os minerais também podem ser consumidos individualmente. Alguns minerais são o cálcio, o potássio ou o magnésio;</p>
+                    <p><i class="bi bi-arrow-right"></i>É comum as pessoas terem falta de magnésio. Se é o teu caso, não deixes de considerar tomar um suplemento de magnésio.</p>
+                    <p><i class="bi bi-arrow-right"></i>Ele é importante para: Relaxamento muscular, Coagulação do sangue, Produção de ATP (molécula responsável pelo fornecimento de força explosiva para os músculos).</p>
+                    <a href="https://peixeverde.pt/Produto/magnesio-500mg-90-comprimidos-naturmil/" target="_blank">
+                        <img src="/Users/ricardoromano/Documents/assets/img/magnesio-img.jpeg" alt="Magnésio" class="suplementos-img">
+                    </a>
+                    <li><strong>Ómega 3</strong></li>
+                    <p><i class="bi bi-arrow-right"></i>Embora seja uma gordura, não tenhas medo de a consumir;</p>
+                    <p><i class="bi bi-arrow-right"></i>s gorduras saudáveis, como esta, são essenciais para o nosso corpo: Melhora o sistem imunitário, Promove a saúde do coração, Melhora a função cerebral, Melhora a mobilidade articular.</p>
+                    <a href="https://nutribio.pt/loja/omega-3-choles-free-1000mg-100-capsulas-now/" target="_blank">
+                        <img src="/Users/ricardoromano/Documents/assets/img/omega3-img.jpeg" alt="Ômega 3" class="suplementos-img">
+                    </a>
+                </ul>
+        </section>
+        <section id="bulking-section" class="bulking-style">
+            <h2><strong>Bulking</strong></h2>
+            <p>Conteúdo sobre <strong>Bulking</strong>...</p>
+            <ul>
+                <li><strong>Bulking</strong> é o processo utilizado por atletas para ganhar peso e massa muscular. O objetivo é consumir mais calorias do que é capaz de queimar e de preferência de fontes saudáveis, como carnes, Whey Protein, laticínios e ovos;</li>
+                <li>O termo bulking surgiu na realidade no mundo do fisiculturismo profissional onde os bodybuilders dividem o seu ano em períodos de competições e a "época fora de competição"</li>
+                <h3>Dicas:</h3>
+                <p><i class="bi bi-arrow-right"></i>Aumentar o consumo de carbohidratos complexos (integrais);</p>
+                <p><i class="bi bi-arrow-right"></i>Colocar pelo menos 5 refeições por dia;</p>
+                <p><i class="bi bi-arrow-right"></i>Não passar mais de 3 horas sem comer;</p>
+                <p><i class="bi bi-arrow-right"></i>Incluir uma fonte de proteína em todas as refeições;</p>
+                <p><i class="bi bi-arrow-right"></i>Cuidado com o excesso de sal, que retêm muito líquido;</p>
+                <p><i class="bi bi-arrow-right"></i>Aumentar gradualmente as cargas durante os treinos na fase de bulking;</p>
+                <p><i class="bi bi-arrow-right"></i>Incluir gorduras saudáveis na alimentação e evitar frituras;</p>
+                <p><i class="bi bi-arrow-right"></i>Manter o controlo do consumo de calorias para não exagerar;</p>
+                <p><i class="bi bi-arrow-right"></i>Em teoria, a prática de exercícios aeróbicos nesta fase pode levar a perda de massa muscular e dificultar o ganho de peso. A verdade é que um pouco de treino intenso pode minimizar os ganhos de gorudra durante o bulking;</p>
+                <p><i class="bi bi-arrow-right"></i>O tempo de duração de bulking costuma ser 4 a 6 meses. Não é recomendado passar mais tempo nessa fase.</p>
+                <p><i class="bi bi-arrow-right"></i>Nesse período, o praticante <strong>Bulking</strong> deve de se alimentar de uma quantidade calorias superior à que seu metabolismo queima, para que assim, consiga formar músculos em sua rotina de exercícios.</p>
+            </ul>
+        </section>
+        <section id="cutting-section" class="cutting-style">
+            <h2>Cutting</h2>
+            <p>Conteúdo sobre <strong>Cutting</strong>...</p>
+            <ul>
+                <li>A perda desse excesso de gordura é o que chamamos de <strong>Cutting</strong>. Nos bodybuilders profissionais, ela é feita algumas semanas antes das competições, com dietas com muita proteína e poucos carbohidratos;</li>
+                <li>O objetivo da fase de cutting é eliminar somente a gordura, evitando ao máximo perder massa muscular;</li>
+                <li>O cutting não significa somente emagrecer para ficar com o abdómen trincado.Se não for feito da maneira adequada, não se perde somente gordura, mas também toda a massa muscular que ganhou durante a fase de bulking um cutting inteligente é aquele que se consegue livrar do excesso de gordura sem comprometar a sua musculatura, tudo sem passar fome ou ter que fazer horas e mais horas de exercícios aeróbicos;</li>
+                <li>A prática tradicional no fisiculturismo sempre foi de comer de tudo durante o bulking e depois fazer uma fase de cutting com pouquissimas calorias para emgrecer rápido. É claro que se você de 3 mil para 800 calorias por dia vai emagracer mas a que custo? Álem de dizer adeus às gorduras e massa muscular você pode também comprometer a sua saúde;</li>
+                <h3>Dicas:</h3>
+                <p><i class="bi bi-arrow-right"></i>Reduza o teor de carboidratos, mas não os elimine por completo. Nos dias de treino intenso aumente o seu consumo de legumes, cereais e grãos integrais;</p>
+                <p><i class="bi bi-arrow-right"></i>Eleve seu consumo de proteínas para evitar o catabolismo muscular;</p>
+                <p><i class="bi bi-arrow-right"></i>Bebe muita água para ajudar a eliminar as toxinas e favorecer o emagrecimento;</p>
+                <p><i class="bi bi-arrow-right"></i>Não tente emagrecer muito rápido, neste caso menos é mais;</p>
+                <p><i class="bi bi-arrow-right"></i>Coma regularmente para manter o metabolismo em alta e para ter energia para os treinos;</p>
+                <p><i class="bi bi-arrow-right"></i>Se quiser minimizar a sua perda de massa muscular, faça suplementação com aminoácidos;</p>
+                <p><i class="bi bi-arrow-right"></i>A duração do cutting é todo o período que uma pessoa pratica a dieta cutting deve ser pelo menos 2-4 meses, não podendo passar disso. Isso porque manter um défice calórico por muito tempo pode acabar por afetar a energia do organismo e causar perda de músculos.</p>
+            </ul>
+        </section>
+        <section id="dicas-section" class="dicas-style">
+            <h2>Dicas</h2>
+            <p><strong>Dicas</strong> para um estilo de vida saudável...</p>
+            <ul>
+                <h3><i class="bi bi-arrow-right"></i>Treinos</h3>
+                    <li>Objetivos a curto prazo como metas semanais como aumentar a carga em determinado exercício ou melhorar a técnica.</li>
+                    <li>Objetivos a longo prazo como perder peso, ganhar massa muscular ou melhorar resistência cardiovascular.</li>
+                    <li>Variar os exercícios entre exercícios compostos e isolados;</li>
+                    <li>Manter uma boa postura e técnica e se possível acompanhamento profissional.</li>
+                <h3><i class="bi bi-arrow-right"></i>Nutrição</h3>
+                    <li>Comer uma dieta balanceada, incluindo uma ampla gama de alimentos em sua dieta para garantir que obtêm todos os nutrientes necessários;</li>
+                    <li>Evite açucares e alimentos processados, reduza esses açucares e alimentos pois têm altos níveis de açucares adicionados e são altamente processados;</li>
+                    <li>Fazer refeições regulares para manter os níveis de energia estáveis;</li>
+                    <li>Mantenha se informado sobre nutrição lendo artigos, veja documentários e a consultar profissionais de saúde;</li>
+                <h3><i class="bi bi-arrow-right"></i>Bem-estar</h3>
+                    <li>Dormir no mínimo de 7 a 9 horas por noite mantendo o quarto escuro e silencioso;</li>
+                    <li>Exercitar pelo menos 30 minutos ao dia na maioria dos dias e inclua atividades que goste como caminhada ou ciclismo;</li>
+                    <li>Cuide da sua saúde mental fazendo exercício físico e atividades ao ar livre;</li>
+                    <li>Estabeleça objetivos saudáveis, planeie atividades ao ar livre e priorize tarefas importantes.</li>
+                <h3><i class="bi bi-arrow-right"></i>Equipamentos</h3>
+                    <li>Escolha equipamentos que se alinhem com seus objetivos de fitness, como perda de peso, ganho de massa muscular, melhora da flexibilidade, etc</li>
+                    <li>Considere equipamentos que possam ser usados para vários tipos de exercícios, como kettlebells, faixas de resistência e halteres ajustáveis;</li>
+                    <li>Equipamentos como bolas de estabilidade, steps e cordas de pular podem ser usados para diversos treinos;</li>
+                    <li>Se for usar em casa, escolha equipamentos que se adaptem ao espaço disponível. Equipamentos dobráveis ou compactos são ideais para ambientes menores.</li>
+                <h3><i class="bi bi-arrow-right"></i>Competição</h3>
+                    <li>Estabeleça metas específicas e mensuráveis para a competição, como tempo de conclusão, peso a ser levantado, etc.</li>
+                    <li>Desenvolva um plano de treinamento detalhado para atingir esses objetivos;</li>
+                    <li>Incorpore diferentes tipos de treinos (força, cardio, flexibilidade) para melhorar seu desempenho geral;</li>
+                    <li>Consuma uma dieta balanceada rica em proteínas, carboidratos complexos e gorduras saudáveis.</li>
+                <h3><i class="bi bi-arrow-right"></i>Roupas</h3>
+                    <li>Opte por tecidos que permitem a ventilação e absorvem o suor, como poliéster, nylon e tecidos tecnológicos;</li>
+                    <li>Roupas que secam rapidamente ajudam a manter o conforto durante exercícios intensos;</li>
+                    <li>Vista-se em camadas para se manter aquecido. Use uma camada base que absorva o suor, uma camada intermediária isolante e uma camada externa resistente ao vento e à água;</li>
+                    <li>Roupas de compressão podem ajudar a melhorar a circulação sanguínea e oferecer suporte aos músculos.</li>
+            </ul>
+        </section>
+    </main>
+<footer>
+        <div class="footer-content">
+            <ul>
+                <li><a href="./faqs.html"><i class="bi bi-question-lg"></i>Perguntas Frequentes</a></li>
+                <li><a href="./place.html"><i class="bi bi-geo-alt-fill"></i>Onde Estamos</a></li>
+                <li><a href="./about.html"><i class="bi bi-person-fill"></i>Sobre Nós</a></li>
+            </ul>
+<p>&copy; 2024 UpGrade. Todos os direitos reservados.</p>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/upgradegym1/" target="_blank"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a>
+                <a href="https://www.reddit.com/?rdt=51637" target="_blank"><i class="bi bi-reddit"></i></a>
+                <a href="https://www.youtube.com" target="_blank"><i class="bi bi-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
