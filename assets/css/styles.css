@@ -32,17 +32,6 @@ header .logo { /*"UpGrade"*/
     text-decoration: none;
 }
 
-.dicas {
-    color: white;
-    cursor: pointer;
-    transition: color 0.3s;
-    font-size: 1em;
-}
-
-.dicas:hover {
-    color: #999999;
-}
-
 header .logo:hover { /*cor ao passar por cima do header logo*/
     color: #999999;
 }
@@ -148,7 +137,9 @@ button:hover { /*cor do botao ao passar o rato por cima*/
     color: #000000;
 }
 
-footer { /*rodape*/
+/*footer*/
+
+footer { 
     background-color: #20159a;
     color: white;
     text-align: center;
@@ -198,7 +189,9 @@ footer p {
     font-size: 0.9em;
 }
 
-#nutrition-section { /*secção de nutrição*/
+/*secção de nutrição*/
+
+#nutrition-section { 
     min-height: 260px;
 }
 
@@ -323,10 +316,25 @@ input, textarea {
     text-decoration: none;
     color: white;
     cursor: pointer;
-    font-size: 1.2em;
+    font-size: 1.3em;
     margin: 0 15px;
 }
 
 .stats:hover {
     color: #999999;
+}
+
+.dicas-sec {
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.dicas-sec:hover {
+    color: #999999;
+}
+
+.navitems {
+    font-size: 20px;
 }
