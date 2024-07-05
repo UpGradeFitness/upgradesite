@@ -5,6 +5,24 @@ body { /* corpo do site*/
     background-color: #ececec;
 }
 
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Aplica a animação ao texto */
+.logo {
+    animation: fadeInUp 1s ease-in-out;
+    font-size: 2em;
+    color: #fff;
+}
+
 header { /* cabeçalho*/
     background-color: #000000;
     display: flex;
@@ -54,6 +72,7 @@ nav ul { /*conjunto de categorias da nav bar*/
     padding: 0;
     margin: 0;
     display: flex;
+    animation: fadeInUp 1s ease-in-out;
 }
 
 nav ul li { /* estilos para itens da navbar*/
@@ -82,6 +101,7 @@ section { /*estilo para as sections*/
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     position: relative;
+    animation: fadeInUp 1s ease-in-out;
 }
 
 #home { /*quadrado principal com o btn*/
