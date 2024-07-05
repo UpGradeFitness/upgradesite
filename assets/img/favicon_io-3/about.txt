@@ -1,0 +1,6 @@
+This favicon was generated using the following font:
+
+- Font Title: Rum Raisin
+- Font Author: Copyright (c) 2012 by Brian J. Bonislawsky DBA Astigmatic (AOETI) (astigma@astigmatic.com), with Reserved Font Name 'Rum Raisin'
+- Font Source: https://fonts.gstatic.com/s/rumraisin/v22/nwpRtKu3Ih8D5avB4h2uJ3-IywA7eMM.ttf
+- Font License: SIL Open Font License, 1.1 (http://scripts.sil.org/OFL))
