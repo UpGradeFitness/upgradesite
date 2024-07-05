@@ -16,13 +16,6 @@ body { /* corpo do site*/
     }
 }
 
-/* Aplica a animação ao texto */
-.logo {
-    animation: fadeInUp 1s ease-in-out;
-    font-size: 2em;
-    color: #fff;
-}
-
 header { /* cabeçalho*/
     background-color: #000000;
     display: flex;
@@ -48,6 +41,8 @@ header .logo { /*"UpGrade"*/
 .logo { /*decoração UpGrade*/
     color: white;
     text-decoration: none;
+    animation: fadeInUp 1s ease-in-out;
+
 }
 
 header .logo:hover { /*cor ao passar por cima do header logo*/
