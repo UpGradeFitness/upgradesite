@@ -5,6 +5,7 @@ body { /* corpo do site*/
     background-color: #ececec;
 }
 
+<<<<<<< HEAD
 @keyframes fadeInUp {
     0% {
         opacity: 0;
@@ -16,6 +17,8 @@ body { /* corpo do site*/
     }
 }
 
+=======
+>>>>>>> a045944304c78bfd2690fc5c6be826645550c250
 header { /* cabeçalho*/
     background-color: #000000;
     display: flex;
@@ -41,8 +44,22 @@ header .logo { /*"UpGrade"*/
 .logo { /*decoração UpGrade*/
     color: white;
     text-decoration: none;
+<<<<<<< HEAD
     animation: fadeInUp 1s ease-in-out;
 
+=======
+}
+
+.dicas {
+    color: white;
+    cursor: pointer;
+    transition: color 0.3s;
+    font-size: 1em;
+}
+
+.dicas:hover {
+    color: #999999;
+>>>>>>> a045944304c78bfd2690fc5c6be826645550c250
 }
 
 header .logo:hover { /*cor ao passar por cima do header logo*/
@@ -67,7 +84,10 @@ nav ul { /*conjunto de categorias da nav bar*/
     padding: 0;
     margin: 0;
     display: flex;
+<<<<<<< HEAD
     animation: fadeInUp 1s ease-in-out;
+=======
+>>>>>>> a045944304c78bfd2690fc5c6be826645550c250
 }
 
 nav ul li { /* estilos para itens da navbar*/
@@ -96,11 +116,18 @@ section { /*estilo para as sections*/
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     position: relative;
+<<<<<<< HEAD
     animation: fadeInUp 1s ease-in-out;
 }
 
 #home { /*quadrado principal com o btn*/
     background: url('../img/home-img.jpg') no-repeat center center/cover;
+=======
+}
+
+#home { /*quadrado principal com o btn*/
+    background: url('/Users/ricardoromano/Documents/assets/img/home-img.jpg') no-repeat center center/cover;
+>>>>>>> a045944304c78bfd2690fc5c6be826645550c250
     height: 77vh;
     display: flex;
     justify-content: center;
@@ -152,9 +179,13 @@ button:hover { /*cor do botao ao passar o rato por cima*/
     color: #000000;
 }
 
+<<<<<<< HEAD
 /*footer*/
 
 footer { 
+=======
+footer { /*rodape*/
+>>>>>>> a045944304c78bfd2690fc5c6be826645550c250
     background-color: #20159a;
     color: white;
     text-align: center;
@@ -204,9 +235,13 @@ footer p {
     font-size: 0.9em;
 }
 
+<<<<<<< HEAD
 /*secção de nutrição*/
 
 #nutrition-section { 
+=======
+#nutrition-section { /*secção de nutrição*/
+>>>>>>> a045944304c78bfd2690fc5c6be826645550c250
     min-height: 260px;
 }
 
@@ -318,6 +353,10 @@ input, textarea {
     cursor: pointer;
     font-size: 16px;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> a045944304c78bfd2690fc5c6be826645550c250
 .button_menu:hover {
     background-color: #45a049;
 }
@@ -330,13 +369,18 @@ input, textarea {
     text-decoration: none;
     color: white;
     cursor: pointer;
+<<<<<<< HEAD
     font-size: 1.3em;
+=======
+    font-size: 1.2em;
+>>>>>>> a045944304c78bfd2690fc5c6be826645550c250
     margin: 0 15px;
 }
 
 .stats:hover {
     color: #999999;
 }
+<<<<<<< HEAD
 
 .dicas-sec {
     font-size: 20px;
@@ -352,3 +396,5 @@ input, textarea {
 .navitems {
     font-size: 20px;
 }
+=======
+>>>>>>> a045944304c78bfd2690fc5c6be826645550c250
