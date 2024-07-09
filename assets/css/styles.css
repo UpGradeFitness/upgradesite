@@ -32,7 +32,7 @@ header { /* cabeçalho*/
 }
 
 header .logo { /*"UpGrade"*/
-    font-size: 1.5em;
+    font-size: 1.6em;
     font-weight: bold;
     cursor: pointer;
     transition: color 0.3s;
@@ -43,6 +43,18 @@ header .logo { /*"UpGrade"*/
     text-decoration: none;
     animation: fadeInUp 1s ease-in-out;
 
+}
+
+.navitems {
+    font-size: 3em;
+}
+
+.stats {
+    font-size: 3em;
+}
+
+.dicas-sec {
+    font-size: 3em;
 }
 
 header .logo:hover { /*cor ao passar por cima do header logo*/
@@ -90,13 +102,25 @@ main { /*estilo para conteúdo principal*/
 }
 
 section { /*estilo para as sections*/
-    margin: 20px 0;
-    padding: 25px;
+    margin: 33px 0;
+    padding: 30px;
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     position: relative;
-    animation: fadeInUp 1s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.sections {
+    background-color: white;
+    padding: 2rem;
+    transition: transform 0.3s ease-in-out, border 0.3s ease-in-out;
+    border: 2px solid transparent;
+}
+
+.sections:hover {
+    transform: scale(1.01);
+    border: 2px solid black;
 }
 
 #home { /*quadrado principal com o btn*/
@@ -351,4 +375,37 @@ input, textarea {
 
 .navitems {
     font-size: 20px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 0px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .navitems {
+    background-color: #000000;
+    border-radius: 15px;
 }
