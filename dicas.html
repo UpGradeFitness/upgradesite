@@ -16,7 +16,7 @@
     <header>
         <a class="logo" href="./index.html">UpGrade</a>        
     </header>
-    <section id="dicas-section" class="dicas-style">
+    <section id="dicas-section" class="sections">
         <h2>Dicas</h2>
         <p><strong>Dicas</strong> para um estilo de vida saudável...</p>
         <ul>
@@ -90,6 +90,19 @@ section {
 
 .bulkcut-img:hover {
     transform: scale(1.05);
+}
+
+.sections {
+    background-color: white;
+    padding: 2rem;
+    transition: transform 0.3s ease-in-out, border 0.3s ease-in-out;
+    border: 2px solid transparent;
+    font-size: 15px
+}
+
+.sections:hover {
+    transform: scale(1.01);
+    border: 2px solid black;
 }
 
 </style>
