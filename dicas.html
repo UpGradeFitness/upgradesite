@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/favicon_io-3/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon_io-3/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon_io-3/favicon-16x16.png">
     <link rel="stylesheet" href="./assets/css/styles.css">
     <script src="./assets/js/script.js" defer></script>
     <title>UpGrade</title>
@@ -16,7 +16,7 @@
     <header>
         <a class="logo" href="./index.html">UpGrade</a>        
     </header>
-    <section id="dicas-section" class="dicas-style">
+    <section id="dicas-section" class="sections">
         <h2>Dicas</h2>
         <p><strong>Dicas</strong> para um estilo de vida saudável...</p>
         <ul>
@@ -51,10 +51,6 @@
                 <li>Vista-se em camadas para se manter aquecido. Use uma camada base que absorva o suor, uma camada intermediária isolante e uma camada externa resistente ao vento e à água;</li>
                 <li>Roupas de compressão podem ajudar a melhorar a circulação sanguínea e oferecer suporte aos músculos.</li>
         </ul>
-    </section>
-    <section>
-        <h3><i class="bi bi-arrow-right"></i>Bulking/Cutting</h3>
-        <img src="assets/img/bulkcut.jpeg" alt="Bulking/Cutting" class="bulkcut-img">
     </section>
     <main class="website-content"></main>
 <footer>
@@ -94,6 +90,19 @@ section {
 
 .bulkcut-img:hover {
     transform: scale(1.05);
+}
+
+.sections {
+    background-color: white;
+    padding: 2rem;
+    transition: transform 0.3s ease-in-out, border 0.3s ease-in-out;
+    border: 2px solid transparent;
+    font-size: 15px
+}
+
+.sections:hover {
+    transform: scale(1.01);
+    border: 2px solid black;
 }
 
 </style>
